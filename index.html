@@ -6,12 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maxwell Kidd Portfolio</title>
+    <!-- CSS -->
     <link rel="stylesheet" href="styles/styles.css">
+    <!-- font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
+    <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google fonts  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body class="main-content">
@@ -129,6 +137,74 @@
                             </div>
                         </div>
                     </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">JavaScript</p>
+                        <div class="progress-con">
+                            <p class="prog text">60%</p>
+                            <div class="progress">
+                                <span class="js"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h4 class="stat-title"> My Journey </h4>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <p class="tl-duration"> August 2014 - June 2018</p>
+                    <h5>Graduate from <span>Boone Grove High School</span></h5>
+                    <p>
+                        Talk about your experience at boone grove
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p class="tl-duration"> February 2018 - August 2018</p>
+                    <h5>Information Technology Technician <span> at Hilltop Neighborhood House</span></h5>
+                    <p>
+                        Talk about your experience at Hilltop
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p class="tl-duration"> June 2018 - August 2018</p>
+                    <h5>Information Technology Technician <span>at Boone Grove High School</span></h5>
+                    <p>
+                        There is some text here and it needs to be edited and changed. This text needs to be changed.
+                        Change this text max. This text needs to be changed very badly. Probably to something proper,
+                        instead of this, but we will get to it.
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <p class="tl-duration"> August 2018 - May 7, 2022</p>
+                    <h5>Attend and Graduate <span>from Ball State University</span></h5>
+                    <p>
+                        There is some text here and it needs to be edited and changed. This text needs to be changed.
+                        Change this text max. This text needs to be changed very badly. Probably to something proper,
+                        instead of this, but we will get to it.
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p class="tl-duration"> September 2022 - May 2022</p>
+                    <h5>Senior Capstone Project in Web Development <span>in collaboration with RefReps LLC </span></h5>
+                    <p>
+                        There is some text here and it needs to be edited and changed. This text needs to be changed.
+                        Change this text max. This text needs to be changed very badly. Probably to something proper,
+                        instead of this, but we will get to it.
+                    </p>
                 </div>
             </div>
         </section>
@@ -136,23 +212,35 @@
         <section class="section sec4 blogs" id="blogs"></section>
         <section class="section sec5 contact" id="contact"></section>
     </main>
+    <!-- nav buttons -->
     <div class="controls">
-        <div class="control control-1 active-btn" data-id="home">
-            <i class="fas fa-home"></i>
-        </div>
-        <div class="control control-2" data-id="about">
-            <i class="fas fa-user"></i>
-        </div>
-        <div class="control control-3 " data-id="portfolio">
-            <i class="fas fa-briefcase"></i>
-        </div>
-        <div class="control control-4 " data-id="blogs">
-            <i class="far fa-newspaper"></i>
-        </div>
-        <div class="control control-5 " data-id="contact">
-            <i class="fas fa-envelope-open"></i>
-        </div>
+        <span title="Home">
+            <div class="control control-1 active-btn" data-id="home">
+                <i class="fas fa-home" data-id="home"></i>
+
+            </div>
+        </span>
+        <span title="About">
+            <div class="control control-2" data-id="about">
+                <i class="fa-solid fa-user"></i>
+            </div>
+        </span>
+        <span title="Portfolio">
+            <div class="control control-3 " data-id="portfolio">
+                <i class="fa-solid fa-floppy-disk"></i>
+            </div>
+        </span>
+        <span title="Blogs">
+            <div class="control control-4 " data-id="blogs">
+                <i class="fa-solid fa-newspaper"></i>
+            </div>
+        </span>
+        <span title="Contact">
+            <div class="control control-5 " data-id="contact">
+                <i class="fa-solid fa-envelope-open-text"></i>
+            </div>
     </div>
+    </span>
     <script src="app.js"></script>
 </body>
 
