@@ -24,16 +24,16 @@
 
 .light-mode{
     --color-primary: #FFFFFF;
-    --color-secondary: #4f38d1;
-    --color-white: #4e575f;
+    --color-secondary: #39a5b7;
+    --color-white: #636b72;
     --color-black: #000;
     --color-grey0: #f8f8f8;
     --color-grey1: #6c7983;
     --color-grey2: #6c7983;
     --color-grey3: #6c7983;
-    --color-grey4: #555e66;
+    --color-grey4: #77818a;
     --color-grey5: #f8f8f8;
-    --color-grey6: #12181b;
+    --color-grey6: #253036;
     --br-sm-2: 14px;
     --transition-primary: all .4s ease-in-out;
     --box-shadow-1: 0 3px 15px rgba(0,0,0,0.3);
@@ -45,6 +45,7 @@ body{
     font-size: 1.1rem;
     color:var(--color-white);
     transition: all .4s ease-in-out;
+    
 }
 
 a {
@@ -228,6 +229,9 @@ section{
         p{
             margin: 1.5rem 0;
             line-height: 2rem;
+            span{
+                color: var(--color-secondary);
+            }
         }
     }
 }
