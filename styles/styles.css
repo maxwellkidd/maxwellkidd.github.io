@@ -7,7 +7,7 @@
 }
 
 :root {
-  --color-primary: rgb(27, 35, 63);
+  --color-primary: rgb(35, 45, 80);
   --color-secondary: #b122ce;
   --color-white: #FFFFFF;
   --color-black: #000;
@@ -16,7 +16,7 @@
   --color-grey2: #b2becd;
   --color-grey3: #6c7983;
   --color-grey4: #454e56;
-  --color-grey5: #2a2e35;
+  --color-grey5: #363a41;
   --color-grey6: #12181b;
   --br-sm-2: 14px;
   --transition-primary: all .4s ease-in-out;
@@ -207,8 +207,8 @@ section {
   left: 0;
   top: 0;
   z-index: -1;
-  -webkit-clip-path: polygon(0 0, 46% 0, 79% 100%, 0% 100%);
-          clip-path: polygon(0 0, 46% 0, 79% 100%, 0% 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 41% 100%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0, 41% 100%, 0% 100%);
 }
 
 .header-content .left-header .image {
@@ -624,6 +624,84 @@ section {
   opacity: 1;
   -webkit-transform: scale(1);
           transform: scale(1);
+}
+
+.blogs {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  margin-top: 3rem;
+}
+
+.blogs .blog {
+  position: relative;
+  background-color: var(--color-grey5);
+  border-radius: 5px;
+  -webkit-box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
+  -webkit-transition: var(--transition-primary);
+  transition: var(--transition-primary);
+}
+
+.blogs .blog:hover {
+  -webkit-box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.3);
+          box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.3);
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-transition: var(--transition-primary);
+  transition: var(--transition-primary);
+}
+
+.blogs .blog:hover img {
+  -webkit-filter: grayscale(50%);
+          filter: grayscale(50%);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.8);
+          box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.8);
+}
+
+.blogs .blog img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: var(--transition-primary);
+  transition: var(--transition-primary);
+}
+
+.blogs .blog .blog-text {
+  margin-top: -7px;
+  padding: 1.1rem;
+  border-top: 8px solid var(--color-secondary);
+}
+
+.blogs .blog .blog-text h4 {
+  font-size: 1.5rem;
+  margin-bottom: .7rem;
+  -webkit-transition: var(--transition-primary);
+  transition: var(--transition-primary);
+  cursor: pointer;
+}
+
+.blogs .blog .blog-text h4:hover {
+  color: var(--color-secondary);
+}
+
+.blogs .blog .blog-text p {
+  color: var(--color-grey2);
+  line-height: 2rem;
+  padding-bottom: 1rem;
+}
+
+.blogs .blog span {
+  color: var(--color-secondary);
 }
 
 .btn-con {
