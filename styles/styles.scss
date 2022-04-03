@@ -243,7 +243,7 @@ section{
     padding-top: 3.5rem;
     padding-bottom: 5rem;
     .right-about{
-        display: grid;
+        display: -moz-inline-grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 2rem;
         .about-item{
@@ -251,6 +251,10 @@ section{
             border-radius: 5px;
             transition: var(--transition-primary);
             box-shadow: 1px 2px 15px rgba(0,0,0,.1);
+            padding: 1px;
+            .top{
+                padding-top: 5px;
+            }
             &:hover{
                 cursor: default;
                 transform: translateY(-5px);
@@ -280,7 +284,6 @@ section{
                         width: 2rem;
                         height: 2px;
                         background-color: var(--color-grey5);
-
                     }
                 }
             }
@@ -297,6 +300,9 @@ section{
         h4{
             font-size: 2rem;
             text-transform: uppercase;
+        }
+        a{
+            color: var(--color-secondary);
         }
     }
 }

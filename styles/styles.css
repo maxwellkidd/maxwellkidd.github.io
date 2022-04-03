@@ -26,7 +26,7 @@
 .light-mode {
   --color-primary: #FFFFFF;
   --color-secondary: #39a5b7;
-  --color-white: #5d6368;
+  --color-white: #636b72;
   --color-black: #000;
   --color-grey0: #f8f8f8;
   --color-grey1: #6c7983;
@@ -34,7 +34,7 @@
   --color-grey3: #6c7983;
   --color-grey4: #77818a;
   --color-grey5: #f8f8f8;
-  --color-grey6: #12181b;
+  --color-grey6: #253036;
   --br-sm-2: 14px;
   --transition-primary: all .4s ease-in-out;
   --box-shadow-1: 0 3px 15px rgba(0,0,0,0.3);
@@ -308,6 +308,10 @@ section {
   line-height: 2rem;
 }
 
+.header-content .right-header p span {
+  color: var(--color-secondary);
+}
+
 .about-container {
   display: -ms-grid;
   display: grid;
@@ -318,8 +322,7 @@ section {
 }
 
 .about-container .right-about {
-  display: -ms-grid;
-  display: grid;
+  display: -moz-inline-grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
@@ -332,6 +335,11 @@ section {
   transition: var(--transition-primary);
   -webkit-box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.1);
           box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.1);
+  padding: 1px;
+}
+
+.about-container .right-about .about-item .top {
+  padding-top: 5px;
 }
 
 .about-container .right-about .about-item:hover {
@@ -391,6 +399,10 @@ section {
 .about-container .left-about h4 {
   font-size: 2rem;
   text-transform: uppercase;
+}
+
+.about-container .left-about a {
+  color: var(--color-secondary);
 }
 
 .about-stats {
@@ -1213,6 +1225,8 @@ section {
   }
   .about-container .right-about {
     padding-top: 2.5rem;
+    display: -ms-grid;
+    display: grid;
   }
   .main-title h2 {
     font-size: 4rem;
